@@ -1,6 +1,6 @@
 import starterIcon from "../../../assets/starterPlanIcon.svg";
 import proIcon from "../../../assets/ProfessionalPlanIcon.svg";
-import enterpriseIcon from "../../../assets/EnterpriseplanIcon.svg";
+import enterpriseIcon from "../../../assets/EnterprisePlanIcon.svg";
 export interface Plan {
   name: string;
   description: string;
