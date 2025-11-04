@@ -19,7 +19,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
       )}
       <div
         className={`-mt-10 mb-4 w-16 h-16 rounded-full flex items-center justify-center shadow-md ${
-          plan.highlighted ? "bg-[#F3F7FF]" : "bg-primary/10"
+          plan.highlighted ? "bg-[#F3F7FF]" : "bg-primary"
         }`}
       >
         <img src={plan.icon} alt={`${plan.name} icon`} className="w-8 h-8" />
@@ -27,7 +27,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
       <div className="px-6 pb-10 text-center">
         <h3
           className={`text-xl font-semibold mb-2 ${
-            plan.highlighted ? "text-white" : "text-[#0F172A]"
+            plan.highlighted ? "text-white" : "text-dark"
           }`}
         >
           {plan.name}
