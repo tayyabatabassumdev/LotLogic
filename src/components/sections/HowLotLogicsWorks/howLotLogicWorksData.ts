@@ -1,4 +1,4 @@
-import installIcon from "../../../assets/installIcon.svg";
+import installIcon from "../../../assets/InstallIcon.svg";
 import generateIcon from "../../../assets/EnterprisePlanIcon.svg";
 import reviewIcon from "../../../assets/reviewIcon.svg";
 
