@@ -1,21 +1,25 @@
-// src/components/Footer/footerData.ts
+
 import { Facebook, Twitter, Linkedin, Send } from "lucide-react";
+
 export interface LinkItem {
   label: string;
-  href: string;
+  to?: string;
+  path?:string;
 }
 export const pagesLinks: LinkItem[] = [
-  { label: "Features", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Customer Reviews", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", to: "home" },
+  { label: "About", to: "about" },
+  { label: "Pricing", to: "pricing" },
+  { label: "How it Works", to: "how-it-works" },
+  { label: "Contact", path: "/contact" },
+  { label: "Customer Reviews", to: "" }, 
 ];
 export const utilityLinks: LinkItem[] = [
-  { label: "Login", href: "#" },
-  { label: "Sign Up", href: "#" },
-  { label: "Reset Password", href: "#" },
-  { label: "404 Not Found", href: "#" },
+   { label: "Terms & Conditions", path: "/termsandconditions" },
+  { label: "Privacy Policy", path: "/privacypolicy" },
+  { label: "Login", path: "" },
+  { label: "Sign Up", path: "" },
+  { label: "Careers", path: "" },
 ];
 export const socialIcons = [
   { href: "#", Icon: Facebook },

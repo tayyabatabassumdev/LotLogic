@@ -1,23 +1,25 @@
-import FeaturesSection from "./components/sections/Features/FeaturesSection"
-import HeroSection from "./components/sections/Hero/HeroSection"
-import PricingSection from "./components/sections/Pricing/PricingSection"
-import WhyTeamsUseSection from "./components/sections/WhyTeamsUse/WhyTeamsUseSection"
-import WorkFasterSection from "./components/sections/WorkFaster/WorkFasterSection"
-import HowLotLogicsWorksSection from "./components/sections/HowLotLogicsWorks/HowLotLogicWorksSection"
-import FAQSection from "./components/sections/FAQ/FAQSection"
-import Footer from "./components/sections/Footer/Footer"
+
+import { BrowserRouter, Routes} from "react-router-dom"
+import { Route } from "react-router-dom"
+import PrivacyPolicy from "./components/sections/pages/PrivacyPolicy"
+import LandingPage from "./components/sections/pages/LandingPage"
+import TermsAndConditions from "./components/sections/pages/TermsAndConditions"
+import ContactPage from "./components/sections/pages/ContactPage"
+import ScrollToTop from "./components/ScrollToTop"
 
 const App = () => {
   return (
     <> 
-    <HeroSection/>
-    <FeaturesSection></FeaturesSection>
-     <WorkFasterSection></WorkFasterSection>
-     <WhyTeamsUseSection></WhyTeamsUseSection>
-     <PricingSection />
-     <HowLotLogicsWorksSection/>
-     <FAQSection></FAQSection>
-     <Footer></Footer>
+    
+      <BrowserRouter>
+      <ScrollToTop/>;
+      <Routes>
+        <Route path="/"  element={<LandingPage/>}/>
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/termsandconditions" element={<TermsAndConditions />} />
+        <Route path="/contact" element={<ContactPage/>}></Route>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
