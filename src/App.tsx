@@ -12,7 +12,7 @@ const App = () => {
     <> 
     
       <BrowserRouter>
-      <ScrollToTop/>;
+      <ScrollToTop/>
       <Routes>
         <Route path="/"  element={<LandingPage/>}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
