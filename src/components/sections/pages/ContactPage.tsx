@@ -9,7 +9,6 @@ const ContactPage : React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-    <div>ContactPage</div>
     <Navbar  menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     {menuOpen && <MobileMenu />}
     <PageHeader badge="Contact Us" title="Get in Touch" subtitle="Your data is protected under our Privacy Policy, and you control how it’s used for billing, analytics, and service improvement."/>
