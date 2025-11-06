@@ -1,10 +1,8 @@
 import React from "react";
 import type { Step } from "./howLotLogicWorksData";
-
 interface StepCardProps {
   step: Step;
 }
-
 const StepCard: React.FC<StepCardProps> = ({ step }) => {
   return (
     <div className="flex flex-col items-center text-center px-4">
@@ -16,5 +14,4 @@ const StepCard: React.FC<StepCardProps> = ({ step }) => {
     </div>
   );
 };
-
 export default StepCard;

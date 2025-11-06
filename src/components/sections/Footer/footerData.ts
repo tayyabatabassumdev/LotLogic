@@ -22,8 +22,8 @@ export const utilityLinks: LinkItem[] = [
   { label: "Careers", path: "" },
 ];
 export const socialIcons = [
-  { href: "#", Icon: Facebook },
-  { href: "#", Icon: Twitter },
-  { href: "#", Icon: Linkedin },
-  { href: "#", Icon: Send },
+  { href: "/#", Icon: Facebook },
+  { href: "/#", Icon: Twitter },
+  { href: "/#", Icon: Linkedin },
+  { href: "/#", Icon: Send },
 ];

@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "./Navbar";
 import { MobileMenu } from "./MobileMenu";
 import { HeroContent } from "./HeroContent";
 import { HeroImage } from "./HeroImage";
+
 export const HeroSection: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleCloseMenu = () => setMenuOpen(false);
+    window.addEventListener("closeMobileMenu", handleCloseMenu);
+    return () => window.removeEventListener("closeMobileMenu", handleCloseMenu);
+  }, []);
+
   return (
     <div className="w-full font-poppins bg-white">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -18,4 +26,5 @@ export const HeroSection: React.FC = () => {
     </div>
   );
 };
+
 export default HeroSection;

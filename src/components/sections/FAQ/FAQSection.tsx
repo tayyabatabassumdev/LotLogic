@@ -12,6 +12,12 @@ const FAQSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Have questions? Look here
         </h2>
+        <div className="flex justify-center mb-6">
+            <div
+              className="h-1 w-12"
+              style={{ backgroundColor: "#3F72B8" }}
+            ></div>
+          </div>
         <p className="text-gray-500 text-sm md:text-base max-w-[600px] mx-auto mb-12">
           Find answers to the most common questions, covering everything from setup to advanced features,
           to help you get the most out of the platform.

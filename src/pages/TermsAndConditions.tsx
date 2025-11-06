@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import { Navbar } from "../Hero/Navbar";
-import Footer from "../Footer/Footer";
-import { MobileMenu } from "../Hero/MobileMenu";
-import PageHeader from "../../PageHeader";
-
-const PrivacyPolicy: React.FC = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+import { useState } from "react";
+import { Navbar } from "../components/sections/Hero/Navbar";
+import Footer from "../components/sections/Footer/Footer";
+import { MobileMenu } from "../components/sections/Hero/MobileMenu";
+import PageHeader from "../components/PageHeader";
+const TermsAndConditions = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="overflow-x-hidden bg-white text-dark font-poppins text-justify">
       <Navbar  menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
        {menuOpen && <MobileMenu />}
-      <PageHeader badge="Privacy-Compliant Version" title="Privacy Policy" subtitle="Your data is protected under our Privacy Policy, and you control how it's used for billing, analytics, and service improvement."/>
-
+      <PageHeader badge="REVIEW BEFORE YOU START KNOW YOUR TERMS" title="Terms And Conditions" subtitle="Before using LotLogic’s platform, please review our Terms & Conditions. They outline your rights, responsibilities, and how we ensure fair use for every team"/>
       <section className="max-w-[1100px] mx-auto px-6 py-12 md:py-20 text-sm md:text-base leading-relaxed text-dark space-y-10 ">
         <p>
           This Privacy Policy describes how colorverse.ai
@@ -30,7 +28,6 @@ const PrivacyPolicy: React.FC = () => {
           Policy. If you do not agree to this Privacy Policy, please do not use
           or access the Services.
         </p>
-
         <div>
           <p>
             <span className="font-bold">
@@ -44,7 +41,6 @@ const PrivacyPolicy: React.FC = () => {
             Services.
           </p>
         </div>
-
         <div>
           <p>
             <span className="font-bold">
@@ -227,7 +223,7 @@ const PrivacyPolicy: React.FC = () => {
       </section>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default PrivacyPolicy;
+export default TermsAndConditions

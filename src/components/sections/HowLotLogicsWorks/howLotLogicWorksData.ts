@@ -1,13 +1,11 @@
 import installIcon from "../../../assets/InstallIcon.svg";
 import generateIcon from "../../../assets/EnterprisePlanIcon.svg";
 import reviewIcon from "../../../assets/reviewIcon.svg";
-
 export interface Step {
   icon: string;
   title: string;
   description: string;
 }
-
 export const stepsData: Step[] = [
   {
     icon: installIcon,

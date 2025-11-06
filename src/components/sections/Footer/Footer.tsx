@@ -4,7 +4,6 @@ import logo from "../../../assets/logo.svg";
 import SocialIcon from "./SocialIcon";
 import FooterLinkGroup from "./FooterLinkGroup";
 import { pagesLinks, utilityLinks, socialIcons } from "./footerData";
-
 const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-white border-t border-gray-200 pt-14 pb-6 text-center">

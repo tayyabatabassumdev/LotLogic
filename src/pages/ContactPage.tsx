@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Navbar } from "../Hero/Navbar";
-import Footer from "../Footer/Footer";
-import { MobileMenu } from "../Hero/MobileMenu";
-import PageHeader from "../../PageHeader";
-import ContactSection from "../../Contact/ContactSection";
-
+import { Navbar } from "../components/sections/Hero/Navbar";
+import Footer from "../components/sections/Footer/Footer";
+import { MobileMenu } from "../components/sections/Hero/MobileMenu";
+import PageHeader from "../components/PageHeader";
+import ContactSection from "../components/Contact/ContactSection";
 const ContactPage : React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -17,5 +16,4 @@ const ContactPage : React.FC = () => {
     </>
   )
 }
-
 export default ContactPage

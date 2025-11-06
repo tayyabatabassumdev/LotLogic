@@ -2,17 +2,14 @@ import React from "react";
 import { scroller } from "react-scroll";
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import type { LinkItem } from "./footerData";
-
 interface FooterLinkGroupProps {
   title: string;
   links: LinkItem[];
 }
-
 const FooterLinkGroup: React.FC<FooterLinkGroupProps> = ({ title, links }) => {
   const existingSections = ["home", "about", "pricing", "how-it-works"];
   const location = useLocation();
   const navigate = useNavigate();
-
 const handleClick = (section: string) => {
   if (location.pathname === "/") {
     scroller.scrollTo(section, {

@@ -5,7 +5,6 @@ interface FAQItemProps {
   isOpen: boolean;
   onToggle: () => void;
 }
-
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle }) => {
   return (
     <div
@@ -33,5 +32,4 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
     </div>
   );
 };
-
 export default FAQItem;

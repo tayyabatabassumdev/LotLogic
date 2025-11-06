@@ -1,7 +1,6 @@
 import React from "react";
 import { stepsData } from "./howLotLogicWorksData";
 import StepCard from "./StepCard";
-
 const HowLotLogicWorksSection: React.FC = () => {
   return (
     <section className="w-full bg-linear-to-b from-[#0A1F47] to-primary text-white py-20 md:py-22">
