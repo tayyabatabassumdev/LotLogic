@@ -1,5 +1,5 @@
 import cloud from "../../../../assets/cloudinfrastructure.svg"
-import teamcollab from "../../../../assets/teamcollab.svg"
+import teamcollab from "../../../../assets/teamCollab.svg"
 import aiCatalog from "../../../../assets/aiCatalog.svg"
 export const cards = [
     {
