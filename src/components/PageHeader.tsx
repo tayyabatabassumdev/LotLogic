@@ -1,12 +1,9 @@
 import React from "react";
-
-
 interface PageHeaderProps {
   badge: string;
   title: string;
   subtitle: string;
 }
-
 export const PageHeader: React.FC<PageHeaderProps> = ({ badge, title, subtitle }) => {
   return (
     <>

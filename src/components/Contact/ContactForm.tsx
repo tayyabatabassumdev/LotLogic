@@ -13,7 +13,7 @@ const ContactForm: React.FC = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {fields.map((field) => (
-          <div className="flex flex-col">
+          <div key={field.name} className="flex flex-col">
             <label className="text-primary font-medium mb-1">
               {field.label}
             </label>

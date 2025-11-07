@@ -2,7 +2,7 @@ import React from "react";
 import { NavLinks } from "./NavLinks";
 import { useNavigationHandlers } from "./useNavigationHandlers";
 export const MobileMenu: React.FC = () => {
-  const { handleButtonClick } = useNavigationHandlers();
+  const { handleButtonClick ,handlePageClick} = useNavigationHandlers();
   const handleCloseMenu = () => {
     window.dispatchEvent(new CustomEvent("closeMobileMenu"));
   };
@@ -12,7 +12,7 @@ export const MobileMenu: React.FC = () => {
 
       <div className="p-4 bg-gray-50 space-y-3">
         <button
-          onClick={() => handleButtonClick("faq")}
+          onClick={() => handlePageClick("/contact")}
           className="w-full text-primary font-medium text-sm hover:underline"
         >
           Book a demo

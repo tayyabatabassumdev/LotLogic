@@ -7,7 +7,7 @@ interface NavbarProps {
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
-  const { handleButtonClick } = useNavigationHandlers();
+  const { handleButtonClick,handlePageClick } = useNavigationHandlers();
   return (
     <header className="w-full py-6">
       <div className="max-w-[1200px] mx-auto px-4">
@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
           <NavLinks />
           <div className="hidden md:flex items-center gap-4">
             <button
-              onClick={() => handleButtonClick("faq")}
+              onClick={() => handlePageClick("/contact")}
               className="text-primary cursor-pointer text-sm font-medium hover:underline"
             >
               Book a demo

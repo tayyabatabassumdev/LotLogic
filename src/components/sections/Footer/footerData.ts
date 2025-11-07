@@ -12,14 +12,12 @@ export const pagesLinks: LinkItem[] = [
   { label: "Pricing", to: "pricing" },
   { label: "How it Works", to: "how-it-works" },
   { label: "Contact", path: "/contact" },
-  { label: "Customer Reviews", to: "" }, 
 ];
 export const utilityLinks: LinkItem[] = [
    { label: "Terms & Conditions", path: "/termsandconditions" },
   { label: "Privacy Policy", path: "/privacypolicy" },
   { label: "Login", path: "" },
   { label: "Sign Up", path: "" },
-  { label: "Careers", path: "" },
 ];
 export const socialIcons = [
   { href: "/#", Icon: Facebook },

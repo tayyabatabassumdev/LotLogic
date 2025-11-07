@@ -15,7 +15,7 @@ const handleClick = (section: string) => {
     scroller.scrollTo(section, {
       smooth: true,
       duration: 600,
-      offset: -80,
+      offset: 0,
     });
   } else {
     navigate(`/#${section}`);
