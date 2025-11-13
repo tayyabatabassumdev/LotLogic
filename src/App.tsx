@@ -7,6 +7,7 @@ import TermsAndConditions from "./pages/TermsAndConditions"
 import ContactPage from "./pages/ContactPage"
 import ScrollToTop from "./components/ScrollToTop"
 import AboutPage from "./pages/AboutPage"
+import CompanyRegistration from "./pages/CompanyRegistration"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/termsandconditions" element={<TermsAndConditions />} />
         <Route path="/contact" element={<ContactPage/>}></Route>
          <Route path="/about" element={<AboutPage/>}></Route>
+          <Route path="/companyregister" element={<CompanyRegistration/>}></Route>
       </Routes>
     </BrowserRouter>
     </>
