@@ -4,7 +4,11 @@ interface PageHeaderProps {
   title: string;
   subtitle: string;
 }
-export const PageHeader: React.FC<PageHeaderProps> = ({ badge, title, subtitle }) => {
+export const PageHeader: React.FC<PageHeaderProps> = ({
+  badge,
+  title,
+  subtitle,
+}) => {
   return (
     <>
       {badge && (
@@ -14,7 +18,6 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ badge, title, subtitle }
           </span>
         </div>
       )}
-
       <section className=" border-gray-100 text-center px-6">
         <h1 className="text-4xl md:text-5xl font-semibold text-primary mb-4">
           {title.split(" ")[0]}{" "}
@@ -22,7 +25,6 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ badge, title, subtitle }
             {title.split(" ").slice(1).join(" ")}
           </span>
         </h1>
-
         <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
           {subtitle}
         </p>

@@ -1,13 +1,11 @@
 import React from "react";
 import { createPortal } from "react-dom";
-
 interface ModalProps {
   show: boolean;
   onClose: () => void;
   title?: string;
   children: React.ReactNode;
 }
-
 const Modal: React.FC<ModalProps> = ({ show, onClose, title, children }) => {
   if (!show) return null;
 
@@ -31,5 +29,4 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, title, children }) => {
     document.body
   );
 };
-
 export default Modal;

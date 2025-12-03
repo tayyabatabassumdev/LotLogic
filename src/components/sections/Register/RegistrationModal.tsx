@@ -1,12 +1,12 @@
-import React from "react";
+
 import Modal from "../../Modal";
 
 interface RegistrationModalProps {
   show: boolean;
   onClose: () => void;
 }
-
-const RegistrationModal: React.FC<RegistrationModalProps> = ({ show, onClose }) => (
+const RegistrationModal: React.FC<RegistrationModalProps> = ({ show, onClose }) =>  {
+  return (
   <Modal show={show} onClose={onClose}>
     <div className="text-center">
       <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -39,6 +39,5 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ show, onClose }) 
       </button>
     </div>
   </Modal>
-);
-
+)};
 export default RegistrationModal;

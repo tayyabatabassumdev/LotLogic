@@ -5,7 +5,6 @@ interface FileUploadProps {
   label?: string;
   onUpload?: (files: FileList | null) => void;
 }
-
 const FileUpload: React.FC<FileUploadProps> = ({ label, onUpload }) => (
   <div>
     {label && (
@@ -20,7 +19,10 @@ const FileUpload: React.FC<FileUploadProps> = ({ label, onUpload }) => (
         className="hidden"
         onChange={(e) => onUpload?.(e.target.files)}
       />
-      <label htmlFor="file-upload" className="cursor-pointer flex flex-col items-center">
+      <label
+        htmlFor="file-upload"
+        className="cursor-pointer flex flex-col items-center"
+      >
         <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-3">
           <Upload className="w-6 h-6 text-gray-400" />
         </div>
@@ -32,5 +34,4 @@ const FileUpload: React.FC<FileUploadProps> = ({ label, onUpload }) => (
     </div>
   </div>
 );
-
 export default FileUpload;

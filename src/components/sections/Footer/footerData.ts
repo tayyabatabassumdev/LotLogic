@@ -17,7 +17,7 @@ export const utilityLinks: LinkItem[] = [
    { label: "Terms & Conditions", path: "/termsandconditions" },
   { label: "Privacy Policy", path: "/privacypolicy" },
   { label: "Login", path: "" },
-  { label: "Sign Up", path: "" },
+  { label: "Register Company", path: "/companyRegister" },
 ];
 export const socialIcons = [
   { href: "/#", Icon: Facebook },

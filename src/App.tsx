@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Routes} from "react-router-dom"
+import { Toaster } from "react-hot-toast";
 import { Route } from "react-router-dom"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import LandingPage from "./pages/LandingPage"
@@ -12,7 +13,7 @@ import CompanyRegistration from "./pages/CompanyRegistration"
 const App = () => {
   return (
     <> 
-    
+      <Toaster position="top-right" reverseOrder={false} />
       <BrowserRouter>
       <ScrollToTop/>
       <Routes>
